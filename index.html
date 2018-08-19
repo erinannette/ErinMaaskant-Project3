@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Cuppa Joe</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700|Lato:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <main>
+        <div class="wrapper">
+            <header class="header">
+                <div class="flex">
+                    <img src="assets/01-coffee-shop.svg" class="icon" id="shop" alt="coffee shop icon">
+                    <h1>What kinda cuppa joe are you?</h1>
+                    <h2>Answer the following questions to see which coffee sums you up</h2>
+                    <img src="assets/01-coffee-cup.svg" class="icon" id="cup" alt="coffee cup icon, aerial perspective">
+                    <h5 class="start">Click the cuppa joe to begin</h5>
+                </div>
+            </header>
+
+            <section class="question-container">
+                <form action="">
+                    <fieldset class="q1 hide">
+                        <div class="flex">
+                            <div class="left"><h4>1</h4></div>
+                            <div class="right">
+                                <h2>Mornings without coffee are:</h2>
+                                <ul class="question">
+                                    <li class="selection">
+                                        <input type="radio" name="radio-1" class="radio-1" id="radio-1a" value="a">
+                                        <label for="question">don’t talk to me.</label></li>
+
+                                    <li class="selection">
+                                        <input type="radio" name="radio-1" class="radio-1" id="radio-1b" value="b">
+                                        <label for="question">full of anguish and pain.</label></li>
+
+                                    <li class="selection">
+                                        <input type="radio" name="radio-1" class="radio-1" id="radio-1c" value="c">
+                                        <label for="question">meh.</label></li>
+
+                                    <li class="selection">
+                                        <input type="radio" name="radio-1" class="radio-1" id="radio-1d" value="d">
+                                        <label for="question">a horrific nightmare I can’t wake up from.</label></li>
+
+                                    <li class="selection">
+                                        <input type="radio" name="radio-1" class="radio-1" id="radio-1e" value="e">
+                                        <label for="question">pretty much the norm.</label></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="q2 hide">
+                        <div class="flex">
+                            <div class="left">
+                                <h4>2</h4>
+                            </div>
+                            <div class="right">
+                                <h2>My ideal vacation is:</h2>
+                                <ul class="question">
+                                    <li class="selection"><input type="radio" name="radio-2" class="radio-2" id="radio-2a" value="a">
+                                    <label for="radio-2a">the Mayan Riviera</label></li>
+                            
+                                    <li class="selection"><input type="radio" name="radio-2" class="radio-2" id="radio-2b" value="b">
+                                    <label for="radio-2b">Disneyland</label></li>
+                            
+                                    <li class="selection"><input type="radio" name="radio-2" class="radio-2" id="radio-2c" value="c">
+                                    <label for="radio-2c">Wine touring by bicycle through the French countryside</label></li>
+                            
+                                    <li class="selection"><input type="radio" name="radio-2" class="radio-2" id="radio-2d" value="d">
+                                    <label for="radio-2d">Ayahuasca in the rainforest</label></li>
+                            
+                                    <li class="selection"><input type="radio" name="radio-2" class="radio-2" id="radio-2e" value="e">
+                                    <label for="radio-2e">Niagara Falls</label></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="q3 hide">
+                        <div class="flex">
+                            <div class="left">
+                                <h4>3</h4>
+                            </div>
+                            <div class="right">
+                                <h2>In my spare time I like to:</h2>
+                                <ul class="question">
+                                    <li class="selection"><input type="radio" name="radio-3" class="radio-3" id="radio-3a" value="a">
+                                    <label for="coffee">practice my origami skills.</label></li>
+                            
+                                    <li class="selection"><input type="radio" name="radio-3" class="radio-3" id="radio-3b" value="b">
+                                    <label for="tea">watch Netflix.</label></li>
+                            
+                                    <li class="selection"><input type="radio" name="radio-3" class="radio-3" id="radio-3c" value="c">
+                                    <label for="tea">learn a new song on the bagpipes.</label></li>
+                            
+                                    <li class="selection"><input type="radio" name="radio-3" class="radio-3" id="radio-3d" value="d">
+                                    <label for="tea">put on my wingsuit and jump off tall cliffs.</label></li>
+                            
+                                    <li class="selection"><input type="radio" name="radio-3" class="radio-3" id="radio-3e" value="e">
+                                    <label for="tea">eat straight-up sugar by the spoonful.</label></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="q4 hide">
+                        <div class="flex">
+                            <div class="left">
+                                <h4>4</h4>
+                            </div>
+                            <div class="right">
+                            <h2>If I won the lottery, I would:</h2>
+                                <ul class="question">
+                                    <li class="selection"><input type="radio" name="radio-4" class="radio-4" id="radio-4a" value="a">
+                                    <label for="coffee">pay off my debts and buy my mom somethin’ special.</label></li>
+                            
+                                    <li class="selection"><input type="radio" name="radio-4" class="radio-4" id="radio-4b" value="b">
+                                    <label for="tea">splurge an extended tropical vacation for me and all my friends!</label></li>
+                            
+                                    <li class="selection"><input type="radio" name="radio-4" class="radio-4" id="radio-4c" value="c">
+                                    <label for="tea">live the rest of my days on a beach in Thailand.</label></li>
+                            
+                                    <li class="selection"><input type="radio" name="radio-4" class="radio-4" id="radio-4d" value="d">
+                                    <label for="tea">get that million-dollar business idea off the ground.</label></li>
+                            
+                                    <li class="selection"><input type="radio" name="radio-4" class="radio-4" id="radio-4e" value="e">
+                                    <label for="tea">buy the Coffee Crisp factory.</label></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="q5 hide">
+                        <div class="flex">
+                            <div class="left">
+                                <h4>5</h4>
+                            </div>
+                            <div class="right">
+                                <h2>Finish this sentence: Rollercoasters...</h2>
+                                <ul class="question">
+                                    <li class="selection"><input type="radio" name="radio-5" class="radio-5" id="radio-5a" value="a">
+                                    <label for="coffee">make people swear a lot.</label></li>
+                            
+                                    <li class="selection"><input type="radio" name="radio-5" class="radio-5" id="radio-5b" value="b">
+                                    <label for="tea">mess up my hair.</label></li>
+                            
+                                    <li class="selection"><input type="radio" name="radio-5" class="radio-5" id="radio-5c" value="c">
+                                    <label for="tea">are good fun if you're 14.</label></li>
+                            
+                                    <li class="selection"><input type="radio" name="radio-5" class="radio-5" id="radio-5d" value="d">
+                                    <label for="tea">all day, everyday.</label></li>
+                            
+                                    <li class="selection"><input type="radio" name="radio-5" class="radio-5" id="radio-5e" value="e">
+                                    <label for="tea">make me throw up.</label></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="results hide">
+                        <div class="flex">
+                            <input type="submit" id="submit" value="">
+                            <h5 class="finish">Click the cuppa joe for your results!</h5>
+                            <div class="results-container"></div>
+                        </div>
+                    </fieldset>
+
+                </form>
+            </section>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,161 @@
+// ----- SITE COLOURS -----
+$blue: #A5CBC3;
+$champagne: #F4D8CD;
+$red: #D60D0D;
+$ltgrey: #f1f3f3;
+$dkgrey: #1d1d1d;
+$mdgrey: #5d5e5d;
+
+// ----- TYPOGRAPHY -----
+$basefont1: 'Lato', sans-serif;
+$basefont2: 'Comfortaa', cursive;
+
+@mixin title-styles($sizeValue) {
+    font-size: $sizeValue * 1px;
+    font-size: ($sizeValue/10) * 1rem;
+    font-family: $basefont2;
+    text-align: center;
+    color: $dkgrey;
+}
+@mixin paragraph-styles($sizeValue) {
+    font-size: $sizeValue * 1px;
+    font-size: ($sizeValue/10) * 1rem;
+    font-family: $basefont1;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: $dkgrey;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+}
+h1 {
+    @include title-styles (82);
+    padding: 20px 0;
+}
+h2 {
+    @include paragraph-styles (35);
+    padding-bottom: 40px;
+}
+h3 {
+    @include title-styles (60);
+    text-align: center;
+    color: $red;
+    text-shadow: 1px 1px 2px $mdgrey;
+    padding-top: 20px;
+}
+h4 {
+    @include title-styles (400);
+    color: $blue;
+}
+h5 {
+    @include paragraph-styles(20);
+    padding: 25px 0;
+    text-align: center;
+}
+ul, li {
+    @include paragraph-styles (25);
+    line-height: 50px;
+}
+p {
+    @include paragraph-styles (30);
+    padding: 25px 0;
+    text-align: center;
+}
+
+// ----- GENERAL STYLES -----
+* {
+    margin: 0;
+    padding: 0;
+}
+// html {
+//     scroll-behavior: smooth;
+// }
+body {
+    background-color: $champagne;
+}
+.wrapper {
+    max-width: 1600px;
+}
+.hide {
+    display: none;
+}
+// ----- HEADER -----
+header {
+    height: 100vh;
+    .icon {
+        height: 200px;
+        cursor: pointer;
+        position: relative;
+        animation-name: enter-stage-left;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+    }
+    @keyframes enter-stage-left {
+        0% {left: -50%;}
+        100% {left: 0px;}
+    }
+    h1, h2, h5 {
+        position: relative;
+        animation-name: enter-stage-right;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+    }
+    @keyframes enter-stage-right {
+        0% {left: 50%;}
+        100% {left: 0px;}
+    }
+}
+
+// ----- QUESTIONS -----
+.header, .results {
+    height: 100vh;
+    .flex {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.q1, .q2, .q3, .q4, .q5 {
+    .flex {
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        .left {
+            width: 25%;
+            text-align: center;
+        }
+        .right {
+            width: 75%;
+        }
+    }
+
+}
+.question {
+    list-style-type: none;
+}
+input[type=radio] {
+    padding-right: 20px;
+}
+
+// ----- RESULTS -----
+input[type=submit] {
+    background-image: url('../assets/01-coffee-cup.svg');
+    background-repeat: no-repeat;
+    background-color: $champagne;
+    width: 200px;
+    height: 200px;
+    color: $dkgrey;
+    border: none;
+    text-transform: uppercase;
+}
+.results-container {
+    width: 75%;
+    line-height: 45px;
+}
