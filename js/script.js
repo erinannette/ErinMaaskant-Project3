@@ -3,31 +3,31 @@ const coffeeTypes = {
 		name: 'Instant Cuppa',
 		description: `Coffee sprayed into the air and instantly dried by simultaneously blowing hot air, creating tiny water-soluble coffee crystals. You’re a straight-up cuppa joe but with an interesting history. You might look ordinary and simple on the outside, but you’ve got some back story and you’re living life on your own terms.`,
 		timesChosen: 0,
-		image: 'url(../assets/02-instant.svg)'
+		image: 'url(ErinMaaskant-Project3/assets/02-instant.svg)'
 	},
 	b: {
 		name: 'Brewed',
 		description: `Coffeemaker, French Press or a Chemex: pour hot water onto ground coffee beans. You're beloved by everyone because of your straight-forward, approachable, no-nonsense approach. Your versatility means you can go anywhere, be in any situation, and always be fantastic.`,
 		timesChosen: 0,
-		image: 'url(../assets/03-brew.svg)'
+		image: 'url(ErinMaaskant-Project3/assets/03-brew.svg)'
 	},
 	c: {
 		name: 'Cappuccino',
 		description: `Equal parts espresso, steamed milk, and foam. Your smooth, easy-drinking nature hides the underlying complexity of your makeup: that milk makes you cozy and inviting, but that fancy foam art on top isn’t straightforward. That takes skill, patience, and a flare for the arts.`,
 		timesChosen: 0,
-		image: 'url(../assets/04-cappuccino.svg)'
+		image: 'url(ErinMaaskant-Project3/assets/04-cappuccino.svg)'
 	},
 	d: {
 		name: 'Ristretto',
 		description: `Very concentrated espresso shot - 22ml instead of the usual 30ml. You do not mess around - life is meant for living and that is exactly what you’re doing. Why do things in halves? GO - DO - PERIOD.`,
 		timesChosen: 0,
-		image: 'url(../assets/05-ristretto.svg)'
+		image: 'url(ErinMaaskant-Project3/assets/05-ristretto.svg)'
 	},
 	e: {
 		name: 'Unicorn Frappuccino',
 		description: `Who are you, coffee imposter? You’re not coffee I don’t even know you.`,
 		timesChosen: 0,
-		image: 'url(../assets/06-frappuccino.svg)'
+		image: 'url(ErinMaaskant-Project3/assets/06-frappuccino.svg)'
 	},
 }
 
