@@ -132,7 +132,7 @@ $(function () {
 			// display results
 			$('.results-container').html(`<h3>${finalResults[0].name}</h3><p>${finalResults[0].description}</p>`);
 			// replace the submit-coffee cup icon with the winning result icon
-			$('#submit').css('background-image', `url(${finalResults[0].image})`);
+			$('#submit').css('background-image', url(`${finalResults[0].image}`));
 			// hide submit-instruction text
 			$('.finish').addClass('hide');
 		}
@@ -141,7 +141,7 @@ $(function () {
 			// display results
 			$('.results-container').html(`<h3>${finalResults[0].name}</h3><p>${finalResults[0].description}</p>`);
 			// replace the submit-coffee cup icon with the winning result icon
-			$('#submit').css('background-image', `url(${finalResults[0].image})`);
+			$('#submit').css('background-image', url(`${finalResults[0].image}`));
 			// hide submit-instruction text
 			$('.finish').addClass('hide');
 		};
