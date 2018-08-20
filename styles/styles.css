@@ -303,7 +303,9 @@ header {
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center; }
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
 
 .q1 .flex, .q2 .flex, .q3 .flex, .q4 .flex, .q5 .flex {
   height: 100vh;
@@ -403,13 +405,16 @@ input[type=submit] {
       padding-top: 40px; }
     .q1 .flex .left, .q1 .flex .right, .q2 .flex .left, .q2 .flex .right, .q3 .flex .left, .q3 .flex .right, .q4 .flex .left, .q4 .flex .right, .q5 .flex .left, .q5 .flex .right {
       width: 96%; }
-      .q1 .flex .left ul, .q1 .flex .left li, .q1 .flex .right ul, .q1 .flex .right li, .q2 .flex .left ul, .q2 .flex .left li, .q2 .flex .right ul, .q2 .flex .right li, .q3 .flex .left ul, .q3 .flex .left li, .q3 .flex .right ul, .q3 .flex .right li, .q4 .flex .left ul, .q4 .flex .left li, .q4 .flex .right ul, .q4 .flex .right li, .q5 .flex .left ul, .q5 .flex .left li, .q5 .flex .right ul, .q5 .flex .right li {
+      .q1 .flex .left ul li, .q1 .flex .right ul li, .q2 .flex .left ul li, .q2 .flex .right ul li, .q3 .flex .left ul li, .q3 .flex .right ul li, .q4 .flex .left ul li, .q4 .flex .right ul li, .q5 .flex .left ul li, .q5 .flex .right ul li {
         font-size: 20px;
         font-size: 2rem;
         font-family: "Lato", sans-serif;
         font-weight: 400;
         letter-spacing: 1px;
         color: #1d1d1d; }
+    .q1 .flex .right li, .q2 .flex .right li, .q3 .flex .right li, .q4 .flex .right li, .q5 .flex .right li {
+      height: 70px;
+      line-height: 30px; }
   .q1 h2, .q2 h2, .q3 h2, .q4 h2, .q5 h2 {
     padding: 0 0 15px 0; }
   .q1 h4, .q2 h4, .q3 h4, .q4 h4, .q5 h4 {
@@ -420,11 +425,33 @@ input[type=submit] {
     color: #1d1d1d;
     color: #A5CBC3; } }
 
-@media (max-width: 350px) {
+@media (max-width: 400px) {
   h1 {
     font-size: 50px;
     font-size: 5rem;
     font-family: "Comfortaa", sans-serif;
     text-align: center;
     color: #1d1d1d;
-    padding: 20px 20px; } }
+    padding: 10px 20px; }
+  ul, li {
+    font-size: 18px;
+    font-size: 1.8rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #1d1d1d; }
+  .header, .results {
+    height: 100%; }
+    .header .flex, .results .flex {
+      height: 100%; }
+  .q1 .flex, .q2 .flex, .q3 .flex, .q4 .flex, .q5 .flex {
+    height: 100%; }
+    .q1 .flex .right ul li, .q2 .flex .right ul li, .q3 .flex .right ul li, .q4 .flex .right ul li, .q5 .flex .right ul li {
+      font-size: 18px;
+      font-size: 1.8rem;
+      font-family: "Lato", sans-serif;
+      font-weight: 400;
+      letter-spacing: 1px;
+      color: #1d1d1d;
+      height: 70px;
+      line-height: 23px; } }

@@ -125,6 +125,7 @@ header {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
     }
 }
 .q1, .q2, .q3, .q4, .q5 {
@@ -214,8 +215,14 @@ input[type=submit] {
             }
             .left, .right {
                 width: 96%;
-                ul, li {
+                ul li {
                     @include paragraph-styles (20);
+                }
+            }
+            .right {
+                li {
+                    height: 70px;
+                    line-height: 30px;
                 }
             }
         }
@@ -229,10 +236,31 @@ input[type=submit] {
     }
 }
 // --------------------------
-@media (max-width: 350px) {
+@media (max-width: 400px) {
     // GENERAL STYLES
     h1 {
         @include title-styles (50);
-        padding: 20px 20px;
+        padding: 10px 20px;
+    }
+    ul, li {
+        @include paragraph-styles (18);
+    }
+    .header, .results {
+        height: 100%;
+        .flex {
+            height: 100%;
+        }
+    }
+    .q1, .q2, .q3, .q4, .q5 {
+        .flex {
+            height: 100%;
+            .right {
+                ul li {
+                    @include paragraph-styles (18);
+                    height: 70px;
+                    line-height: 23px;
+                }
+            }
+        }
     }
 }
