@@ -1,13 +1,13 @@
 const coffeeTypes = {
 	a: {
 		name: 'Instant Cuppa',
-		description: `Coffee sprayed into the air and instantly dried by simultaneously blowing hot air, which creates tiny little water-soluble coffee crystals. You’re a straight-up cuppa joe but with an interesting history. You might look ordinary and simple on the outside, but you’ve got some back story and you’re living life on your own terms.`,
+		description: `Coffee sprayed into the air and instantly dried by simultaneously blowing hot air, creating tiny water-soluble coffee crystals. You’re a straight-up cuppa joe but with an interesting history. You might look ordinary and simple on the outside, but you’ve got some back story and you’re living life on your own terms.`,
 		timesChosen: 0,
 		image: 'assets/02-instant.svg'
 	},
 	b: {
 		name: 'Brewed',
-		description: `Coffeemaker, French Press or maybe even a Chemex: pour hot water onto ground coffee beans, then brew. You're beloved by everyone because of your straight-forward, approachable, no-nonsense approach to life. Your versatility means you can go anywhere, be in any situation, and always be fantastic.`,
+		description: `Coffeemaker, French Press or a Chemex: pour hot water onto ground coffee beans. You're beloved by everyone because of your straight-forward, approachable, no-nonsense approach. Your versatility means you can go anywhere, be in any situation, and always be fantastic.`,
 		timesChosen: 0,
 		image: 'assets/03-brew.svg'
 	},
@@ -35,26 +35,26 @@ const coffeeTypes = {
 $(function () {
 	$('#cup').click(function() {
 		$('.header').addClass('hide');
-		$('.q1').removeClass('hide');
+		$('.q1').fadeIn('.hide');
 	});
 	$('.radio-1').click(function () {
-		$('.q1').addClass('hide');
+		$('.q1').fadeOut('hide');
 		$('.q2').removeClass('hide');
 	});
 	$('.radio-2').click(function () {
-		$('.q2').addClass('hide');
+		$('.q2').fadeOut('hide');
 		$('.q3').removeClass('hide');
 	});
 	$('.radio-3').click(function () {
-		$('.q3').addClass('hide');
+		$('.q3').fadeOut('hide');
 		$('.q4').removeClass('hide');
 	});
 	$('.radio-4').click(function () {
-		$('.q4').addClass('hide');
+		$('.q4').fadeOut('hide');
 		$('.q5').removeClass('hide');
 	});
 	$('.radio-5').click(function () {
-		$('.q5').addClass('hide');
+		$('.q5').fadeOut('hide');
 		$('.results').removeClass('hide');
 	});
 

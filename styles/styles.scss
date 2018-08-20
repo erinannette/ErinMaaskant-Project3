@@ -1,3 +1,6 @@
+// ----- PARTIALS -----
+@import "setup.scss";
+
 // ----- SITE COLOURS -----
 $blue: #A5CBC3;
 $champagne: #F4D8CD;
@@ -8,7 +11,7 @@ $mdgrey: #5d5e5d;
 
 // ----- TYPOGRAPHY -----
 $basefont1: 'Lato', sans-serif;
-$basefont2: 'Comfortaa', cursive;
+$basefont2: 'Comfortaa', sans-serif;
 
 @mixin title-styles($sizeValue) {
     font-size: $sizeValue * 1px;
@@ -34,10 +37,13 @@ body {
 h1 {
     @include title-styles (82);
     padding: 20px 0;
+    color: $dkgrey;
 }
 h2 {
     @include paragraph-styles (35);
-    padding-bottom: 40px;
+    padding: 0 15px 40px 15px;
+    text-align: left;
+    color: $dkgrey;
 }
 h3 {
     @include title-styles (60);
@@ -64,15 +70,14 @@ p {
     padding: 25px 0;
     text-align: center;
 }
-
 // ----- GENERAL STYLES -----
 * {
     margin: 0;
     padding: 0;
 }
-// html {
-//     scroll-behavior: smooth;
-// }
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-color: $champagne;
 }
@@ -87,11 +92,14 @@ header {
     height: 100vh;
     .icon {
         height: 200px;
-        cursor: pointer;
+        min-height: 150px;
         position: relative;
         animation-name: enter-stage-left;
         animation-duration: 1s;
         animation-iteration-count: 1;
+    }
+    #cup {
+        cursor: pointer;
     }
     @keyframes enter-stage-left {
         0% {left: -50%;}
@@ -108,7 +116,6 @@ header {
         100% {left: 0px;}
     }
 }
-
 // ----- QUESTIONS -----
 .header, .results {
     height: 100vh;
@@ -126,6 +133,7 @@ header {
         display: flex;
         flex-direction: row;
         justify-content: center;
+        flex-wrap: wrap;
         align-items: center;
         .left {
             width: 25%;
@@ -133,20 +141,22 @@ header {
         }
         .right {
             width: 75%;
+            ul {
+                list-style-type: none;
+                border: 1px solid red;
+                li {
+                    height: 90px;
+                    border: 1px solid red;
+                    line-height: 30px;
+                }
+            }
         }
     }
-
 }
-.question {
-    list-style-type: none;
-}
-input[type=radio] {
-    padding-right: 20px;
-}
-
 // ----- RESULTS -----
 input[type=submit] {
     background-image: url('../assets/01-coffee-cup.svg');
+    cursor: pointer;
     background-repeat: no-repeat;
     background-color: $champagne;
     width: 200px;
@@ -158,4 +168,74 @@ input[type=submit] {
 .results-container {
     width: 75%;
     line-height: 45px;
+}
+
+// -------------------------- //
+// ----- RESPONSIVENESS ----- //
+
+@media (max-width: 1060px) {
+    .instructions {
+        text-align: center;
+        padding: 0 40px 40px 40px;
+    }    
+}  
+@media (max-width: 550px) {
+    // GENERAL STYLES
+    h1 {
+        @include title-styles (65);
+    }
+    h2 {
+        @include paragraph-styles (25);
+        // padding: 0 40px 20px 40px;
+    }
+    h3 {
+        @include title-styles (35);
+        padding-top: 10px;
+        color: $red;
+        text-shadow: 1px 1px 1px $mdgrey;
+    }
+    h5 {
+        padding: 25px 10px;
+        text-align: center;
+    }
+    p {
+        @include paragraph-styles (20);
+        padding: 10px 0;
+        text-align: center;
+        line-height: 37px;
+    }
+}
+// --------------------------
+@media (max-width: 500px) {
+    // QUESTIONS
+    .q1, .q2, .q3, .q4, .q5 {
+        .flex {
+            flex-direction: column;
+            justify-content: flex-start;
+            .left {
+                padding-top: 40px;
+            }
+            .left, .right {
+                width: 96%;
+                ul, li {
+                    @include paragraph-styles (20);
+                }
+            }
+        }
+        h2 {
+            padding: 0 0 15px 0;
+        }
+        h4 {
+            @include title-styles (100);
+            color: $blue;
+        } 
+    }
+}
+// --------------------------
+@media (max-width: 350px) {
+    // GENERAL STYLES
+    h1 {
+        @include title-styles (50);
+        padding: 20px 20px;
+    }
 }
