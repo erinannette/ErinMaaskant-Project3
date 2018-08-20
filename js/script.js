@@ -3,31 +3,31 @@ const coffeeTypes = {
 		name: 'Instant Cuppa',
 		description: `Coffee sprayed into the air and instantly dried by simultaneously blowing hot air, creating tiny water-soluble coffee crystals. You’re a straight-up cuppa joe but with an interesting history. You might look ordinary and simple on the outside, but you’ve got some back story and you’re living life on your own terms.`,
 		timesChosen: 0,
-		image: 'assets/02-instant.svg'
+		image: '../assets/02-instant.svg'
 	},
 	b: {
 		name: 'Brewed',
 		description: `Coffeemaker, French Press or a Chemex: pour hot water onto ground coffee beans. You're beloved by everyone because of your straight-forward, approachable, no-nonsense approach. Your versatility means you can go anywhere, be in any situation, and always be fantastic.`,
 		timesChosen: 0,
-		image: 'assets/03-brew.svg'
+		image: '../assets/03-brew.svg'
 	},
 	c: {
 		name: 'Cappuccino',
 		description: `Equal parts espresso, steamed milk, and foam. Your smooth, easy-drinking nature hides the underlying complexity of your makeup: that milk makes you cozy and inviting, but that fancy foam art on top isn’t straightforward. That takes skill, patience, and a flare for the arts.`,
 		timesChosen: 0,
-		image: 'assets/04-cappuccino.svg'
+		image: '../assets/04-cappuccino.svg'
 	},
 	d: {
 		name: 'Ristretto',
 		description: `Very concentrated espresso shot - 22ml instead of the usual 30ml. You do not mess around - life is meant for living and that is exactly what you’re doing. Why do things in halves? GO - DO - PERIOD.`,
 		timesChosen: 0,
-		image: 'assets/05-ristretto.svg'
+		image: '../assets/05-ristretto.svg'
 	},
 	e: {
 		name: 'Unicorn Frappuccino',
 		description: `Who are you, coffee imposter? You’re not coffee I don’t even know you.`,
 		timesChosen: 0,
-		image: 'assets/06-frappuccino.svg'
+		image: '../assets/06-frappuccino.svg'
 	},
 }
 
@@ -132,7 +132,7 @@ $(function () {
 			// display results
 			$('.results-container').html(`<h3>${finalResults[0].name}</h3><p>${finalResults[0].description}</p>`);
 			// replace the submit-coffee cup icon with the winning result icon
-			$('#submit').css('background-image', `url(assets/${finalResults[0].image})`);
+			$('#submit').css('background-image', `url(${finalResults[0].image})`);
 			// hide submit-instruction text
 			$('.finish').addClass('hide');
 		}
@@ -141,7 +141,7 @@ $(function () {
 			// display results
 			$('.results-container').html(`<h3>${finalResults[0].name}</h3><p>${finalResults[0].description}</p>`);
 			// replace the submit-coffee cup icon with the winning result icon
-			$('#submit').css('background-image', `url(assets/${finalResults[0].image})`);
+			$('#submit').css('background-image', `url(${finalResults[0].image})`);
 			// hide submit-instruction text
 			$('.finish').addClass('hide');
 		};
