@@ -328,11 +328,9 @@ header {
   .q1 .flex .right, .q2 .flex .right, .q3 .flex .right, .q4 .flex .right, .q5 .flex .right {
     width: 75%; }
     .q1 .flex .right ul, .q2 .flex .right ul, .q3 .flex .right ul, .q4 .flex .right ul, .q5 .flex .right ul {
-      list-style-type: none;
-      border: 1px solid red; }
+      list-style-type: none; }
       .q1 .flex .right ul li, .q2 .flex .right ul li, .q3 .flex .right ul li, .q4 .flex .right ul li, .q5 .flex .right ul li {
-        height: 90px;
-        border: 1px solid red;
+        height: 70px;
         line-height: 30px; }
 
 input[type=submit] {
